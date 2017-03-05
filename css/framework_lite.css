@@ -92,7 +92,8 @@ table thead tr .site span{
 }
 table tbody tr .site span{
 	color: #ff0000;
-	margin-left: 45%;
+		margin-left: 2%;
+
 
 } 
 table tbody tr td:nth-child(3){
@@ -101,7 +102,7 @@ table tbody tr td:nth-child(3){
 } 
 table tbody tr  .market_place span{
 	color:#ccc;
-	margin-left: 45%;
+	margin-left: 2%;
 }
 table  tr .site{
 	    border-left: 1px solid rgba(255, 141, 0, 0.9);
