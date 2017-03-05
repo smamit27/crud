@@ -4,7 +4,8 @@ angular.module("portalApp").component("popupAppComp",{
     controller:function($http,$scope,modalService,modalFactory){
    
 //$scope.hello = modalService.getModal();  
-$scope.hello = modalFactory.getModal();    
+$scope.hello = modalFactory.getModal();  
+console.log("hello"+ JSON.stringify($scope.hello));
   
 
     }});
