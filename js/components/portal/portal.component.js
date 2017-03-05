@@ -1,7 +1,7 @@
 angular.module("portalApp").component("portalAppComp",{
     
     templateUrl:"js/components/portal/portal.template.html",
-    controller:function($http,$scope){
+    controller:function($http,$scope,$state,modalService,modalFactory){
     var self = this;
     //Get Json From Json File//    
     $http.get("assets/cart.json").then((response) =>{
@@ -10,6 +10,10 @@ angular.module("portalApp").component("portalAppComp",{
     this.addOpen = true; 
      //Add Functionality //
      this.addItem = (data) =>{
+        //modalService.setModal(data);
+        modalFactory.setModal(data);
+
+        $state.go('popup');
          this.getPortalData.push(data);
          $scope.current = {};
          this.zeroLength = false;
@@ -32,6 +36,7 @@ angular.module("portalApp").component("portalAppComp",{
     
     //Edit Functionality// 
      this.edit = (data) =>{
+         $state.go('popup');
         $scope.current = data;
         this.editOpen = true;
         this.addOpen = false; 

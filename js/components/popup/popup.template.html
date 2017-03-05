@@ -1,0 +1,25 @@
+
+
+<div id="myModal" class="modal">
+{{hello}}
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" ng-click="closeOverlay()">&times;</span>
+        <div class="sapient-col-6 left">
+            <div class="pam textAlignC">
+              <div class="sapient-hr-dark"></div>
+              <p class="mtl">PAISLEY JEANS</p>
+              {{hello}}
+              <span class>{{modalDataImages.c_currency}}</span>
+              <span class="fontSizeA">{{modalDataImages.p_price}}</span>
+          </div>
+           <div class="sapient-col-4 mtm mxl left">
+              <button class="btn left checkOutBtn uppercase">Edit</button>                       
+         </div>
+        </div>
+        <div class="sapient-col-6 left">
+            <img ng-src="{{modalDataImages.images}}" ng-click="editOverlay(ctrl)" class="imgDetailChange">
+        </div>
+       
+     </div>
+    </div>
