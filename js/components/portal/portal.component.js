@@ -13,7 +13,7 @@ angular.module("portalApp").component("portalAppComp",{
         //modalService.setModal(data);
         modalFactory.setModal(data);
 
-        $state.go('popup');
+        // $state.go('popup');
          this.getPortalData.push(data);
          $scope.current = {};
          this.zeroLength = false;
@@ -36,7 +36,7 @@ angular.module("portalApp").component("portalAppComp",{
     
     //Edit Functionality// 
      this.edit = (data) =>{
-         $state.go('popup');
+        //  $state.go('popup');
         $scope.current = data;
         this.editOpen = true;
         this.addOpen = false; 
